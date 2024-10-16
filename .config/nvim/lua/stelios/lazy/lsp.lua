@@ -65,6 +65,16 @@ return {
                             }
                         }
                     })
+                end ,
+                jsonls = function()
+                    require('lspconfig').jsonls.setup({
+                        capabilities = lsp_capabilities,
+                        settings = {
+                            json = {
+                                maxItemsComputed = 1000000, -- Set your desired value here
+                            },
+                        },
+                    })
                 end,
             }
         })
