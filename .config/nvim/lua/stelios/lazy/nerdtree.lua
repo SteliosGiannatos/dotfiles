@@ -1,6 +1,18 @@
 return {
-    'preservim/nerdtree',
+    'stevearc/oil.nvim',
+    ---@module 'oil'
+    ---@type oil.SetupOpts
+    opts = {},
     config = function()
-        vim.keymap.set("n", "<leader>pv", ":NERDTreeExplore<CR>")
+        require("oil").setup({
+            default_file_explorer = true,
+            delete_to_trash = true,
+            skip_confirm_for_simple_edits = true,
+            view_options = {
+                show_hidden = true,
+                natural_order = true
+            }
+
+        })
     end
 }
