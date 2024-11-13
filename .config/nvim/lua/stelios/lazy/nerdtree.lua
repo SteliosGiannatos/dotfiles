@@ -10,9 +10,14 @@ return {
             skip_confirm_for_simple_edits = true,
             view_options = {
                 show_hidden = true,
-                natural_order = true
-            }
-
+                natural_order = true,
+            },
+            keymaps = {
+                ["<C-s>"] = false,
+                ["<C-h>"] = false,
+                ["<C-t>"] = false,
+            },
         })
     end
 }
+
