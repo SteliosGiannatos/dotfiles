@@ -148,4 +148,3 @@ export PATH=$PATH:$(go env GOPATH)/bin
 export EDITOR='/bin/vi'
 export VISUAL='/bin/vi'
 
-eval "$(fzf --bash)"
