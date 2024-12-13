@@ -144,6 +144,9 @@ cd() {
 
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$(go env GOPATH)/bin
+export PATH=$PATH:/home/stelios/.pyenv/versions/3.12.7/bin
+
+export PATH=$PATH:/usr/bin
 
 export EDITOR='/bin/vi'
 export VISUAL='/bin/vi'
