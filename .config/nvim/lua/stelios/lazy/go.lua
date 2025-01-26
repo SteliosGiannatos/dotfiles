@@ -5,10 +5,28 @@ return {
             tags_name = 'json',
             tags_options = {}
         })
-        vim.keymap.set('n', '<leader>gtt', ':GoAddTags json,xml,yaml,csv<CR>', { noremap = true, silent = true })
-        vim.keymap.set('v', '<leader>gtt', ':GoAddTags json,xml,yaml,csv<CR>', { noremap = true, silent = true })
 
-        vim.keymap.set('v', '<leader>gtc', ":'<,'>GoClearTags<CR>", { noremap = true, silent = true })
-        vim.keymap.set('n', '<leader>gtc', ":'<,'>GoClearTags<CR>", { noremap = true, silent = true })
+        -- Add tags in both normal and visual mode
+        vim.keymap.set({ 'n', 'v' }, '<leader>gtt', function()
+            if vim.fn.mode() == 'v' then
+                -- For visual mode, apply the command to the selected range
+                vim.cmd("'<,'>GoAddTags json,xml,yaml,csv")
+            else
+                -- For normal mode, apply to the current line or file
+                vim.cmd("GoAddTags json,xml,yaml,csv")
+            end
+        end, { noremap = true, silent = true })
+
+        -- Clear tags in both normal and visual mode
+        vim.keymap.set({ 'n', 'v' }, '<leader>gtc', function()
+            if vim.fn.mode() == 'v' then
+                -- For visual mode, apply the command to the selected range
+                vim.cmd("'<,'>GoClearTags")
+            else
+                -- For normal mode, apply to the current line or file
+                vim.cmd("GoClearTags")
+            end
+        end, { noremap = true, silent = true })
     end
 }
+
