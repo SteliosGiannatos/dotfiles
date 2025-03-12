@@ -117,10 +117,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval eval -- "$(/usr/local/bin/starship init bash --print-full-init)"
+eval "$(starship init bash)"
 export PATH="$HOME/.local/bin:$PATH"
 alias vim=nvim
 
