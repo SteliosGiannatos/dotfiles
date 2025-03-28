@@ -40,6 +40,16 @@ return {
 
         require('mason').setup({})
         require('mason-lspconfig').setup({
+            ensure_installed = {
+                "bashls", -- bash-language-server
+                "gopls", -- Go
+                "jsonls", -- json-lsp
+                "lua_ls", -- lua-language-server
+                "marksman", -- Markdown LSP
+                "pyright", -- Python
+                "ts_ls", -- typescript-language-server
+            },
+            automatic_installation = true,
             handlers = {
                 function(server_name)
                     require('lspconfig')[server_name].setup({
@@ -65,7 +75,7 @@ return {
                             }
                         }
                     })
-                end ,
+                end,
                 jsonls = function()
                     require('lspconfig').jsonls.setup({
                         capabilities = lsp_capabilities,
