@@ -154,8 +154,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 alias vim='nvim'
+alias t="tmux"
 
 
 eval "$(fzf --bash)"
 
-alias z='zellij'
