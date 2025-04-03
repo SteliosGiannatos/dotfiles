@@ -157,3 +157,5 @@ alias vim='nvim'
 
 
 eval "$(fzf --bash)"
+
+alias z='zellij'
