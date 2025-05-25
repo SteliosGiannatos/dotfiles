@@ -2,7 +2,7 @@
 
 The main Dependences are:
 
-- Kitty
+- Ghostty
 - fzf
 - Stow
 - tmux
@@ -18,6 +18,16 @@ git pull https://github.com/SteliosGiannatos/dotfiles
 
 ```bash
 sudo apt install stow
+```
+
+```bash
+sudo apt install zsh
+```
+
+```bash
+whoami
+which zsh
+chsh YOUR_USER
 ```
 
 - The rest of the Dependences

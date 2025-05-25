@@ -8,10 +8,10 @@ keybind = ctrl+shift+]=next_tab
 keybind = ctrl+shift+[=previous_tab
 
 font-size = 14
-font-family = "FiraCode Nerd Font"
-font-family-bold = "FiraCode Nerd Font Bold"
-font-family-italic = "FiraCode Nerd Font Italic"
-font-family-bold-italic = "FiraCode Nerd Font Bold Italic"
+font-family = "JetBrainsMonoNL-Regular"
+font-family-bold = "JetBrainsMonoNL-Bold"
+font-family-italic = "JetBrainsMonoNL-Italic"
+font-family-bold-italic = "JetBrainsMonoNL-BoldItalic"
 
 background-opacity = 0.9
 unfocused-split-opacity = 0.7
