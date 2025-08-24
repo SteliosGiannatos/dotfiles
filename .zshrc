@@ -65,6 +65,12 @@ alias l='ls -CF --color'
 #fzf Alias
 alias fzf='fzf --preview='\''cat {}'\'''
 
+#ripgrep Alias
+alias grep='rg'
+
+#bat Alias
+alias cat='bat'
+
 #nvim alias
 alias vim=nvim
 

@@ -7,6 +7,9 @@ The main Dependences are:
 - Stow
 - tmux
 - neovim
+- ripgrep (rg)
+- bat
+- fd
 
 `This Config Works well on systems that use bashrc with no extra configuration.`
 
