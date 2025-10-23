@@ -38,4 +38,9 @@ chsh YOUR_USER
 ```bash
 stow .
 ```
+
+```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+prefix + I inside tmux to install plugins
