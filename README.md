@@ -38,3 +38,4 @@ chsh YOUR_USER
 ```bash
 stow .
 ```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
