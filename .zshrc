@@ -111,3 +111,11 @@ export NVM_DIR="$HOME/.nvm"
 
 #evals
 eval "$(fzf --zsh)"
+
+# pnpm
+export PNPM_HOME="/home/stelios/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
